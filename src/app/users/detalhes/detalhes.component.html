@@ -1,0 +1,37 @@
+<h1 mat-dialog-title>Detalhes</h1>
+<div mat-dialog-content>
+    <div class="row">
+        <div class="col"><span class="block">id:</span> {{data.id}}</div>
+        <div class="col"><span class="block">Name:</span> {{data.name}}</div>
+        <div class="col"><span class="block">Username:</span> {{data.username}}</div>
+        <div class="col"><span class="block">Email:</span> {{data.email}}</div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col"><span class="block">Street:</span> {{data.address.street}}</div>
+        <div class="col"><span class="block">Suite:</span> {{data.address.suite}}</div>
+        <div class="col"><span class="block">City:</span> {{data.address.city}}</div>
+        <div class="col"><span class="block">Zipcode:</span> {{data.address.zipcode}}</div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col"><span class="block">Latitude:</span> {{data.address.geo.lat}}</div>
+        <div class="col"><span class="block">Longitude:</span> {{data.address.geo.lng}}</div>
+        <div class="col"><span class="block">Phone:</span> {{data.phone}}</div>
+        <div class="col"><span class="block">Website:</span> {{data.website}}</div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col"><span class="block">Company Name:</span> {{data.company.name}}</div>
+        <div class="col"><span class="block">Company Catch Phrase:</span> {{data.company.catchPhrase}}</div>
+        <div class="col"><span class="block">Company bs:</span> {{data.company.bs}}</div>
+        <div class="col"></div>
+    </div>
+
+</div>
+<div mat-dialog-actions >
+    <div class="col-12 text-right">
+        <button mat-dialog-close type="button" class="btn btn-primary btn-sm">Fechar</button>
+    </div>
+  
+</div>
